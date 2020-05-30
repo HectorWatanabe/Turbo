@@ -1,0 +1,25 @@
+@media (max-width: 991px){
+    
+    .navbar{
+        position: relative !important;
+        background-color: #1f2d41;
+    }
+
+    header .navbar .navbar-nav .nav-link {
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+        padding-right: .5rem;
+        margin-left: 0rem;
+    }
+
+    header .navbar .btn-verde{
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    #Portada .container .contenido-portada .btn-verde {
+        margin-bottom: 1rem;
+    }
+}
+

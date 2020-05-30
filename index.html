@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     <link href="./assets/css/app.css" rel="stylesheet" />
+    <link href="./assets/css/responsive.css" rel="stylesheet" />
     <title>Turbo - Landing Page</title>
 </head>
 <body>
     
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Turbo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Landings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Documentation</a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-verde" href="#">buy now <i class="fas fa-arrow-right"></i></a>
-                </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Landings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Documentation</a>
+                    </li>
+                </ul>
+                <a class="btn btn-verde" href="#">buy now <i class="fas fa-arrow-right"></i></a>
+            </div>
             </div>
         </nav>
     </header>
@@ -45,7 +46,7 @@
     <section id="Portada">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="contenido-portada">
                         <h1>Build your next project faster with SB UI Kit Pro</h1>
                         <p>Welcome to SB UI Kit Pro, a toolkit for building beautiful web interfaces, created by the developmet team at Start Bootstrap</p>
@@ -53,19 +54,165 @@
                         <a class="link" href="#">documentation</a>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-lg-6">
                     <div class="imagen-portada">
                         <img src="./assets/images/drawkit-content-man-color.svg" alt="Alternate Text" />
                     </div>
                 </div>
             </div>
         </div>
+        <div class="curva-portada">
+            <img src="./assets/images/curva-redonda-blanca.svg" alt="curva-portada">
+        </div>
+    </section>
+
+    <section id="Caracteristicas">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="tarjeta">
+                        <div class="icono">
+                            <i class="fab fa-buffer"></i>
+                        </div>
+                        <h3>Built for developers</h3>
+                        <p>Our customizable, block-based build system makes creating your next project fast and easy!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="tarjeta">
+                        <div class="icono">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Modern responsive design</h3>
+                        <p>Featuring carefully crafted, mobile-first components, your end product will function beautifully on any device!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="tarjeta">
+                        <div class="icono">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Complete documentation</h3>
+                        <p>All of the layouts, page sections, components, and utilities are fully covered in this products docs.</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="curva-caracteristicas">
+            <img src="./assets/images/curva-redonda-ploma.svg" alt="curva-portada">
+        </div>
+    </section>
+
+    <section id="Caracteristicas2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-lg-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="description">
+                                <h3>Here's What You Get</h3>
+                                <p>When you purchase this UI Kit, you get access to a robust suite of powerful tools and components to help you build your next landing page quickly and easily.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row detalles-caracteristicas2">
+                        <div class="col-6">
+                            <div class="mini-detalle">
+                                <h5>Landing Pages</h5>
+                                <p>We've crafted landing page examples for many popular business and product types.</p>
+                                <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mini-detalle">
+                                <h5>Page Examples</h5>
+                                <p>Use our pre-built page examples to quickly create inner pages to your website.</p>
+                                <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mini-detalle">
+                                <h5>Layouts</h5>
+                                <p>Our flex box based layout options make your site beautifully responsive and adaptable to any device.</p>
+                                <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mini-detalle">
+                                <h5>Modular Sections</h5>
+                                <p>All of the sections on each page are modular, so you can drop them into an existing page, or start with a new one!</p>
+                                <a href="">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 order-lg-1">
+                    <div class="imagen-caracteristica2">
+                        <img class="img-fluid" src="./assets/images/turbo-image.png" alt="imagen-primera-seccion">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section id="SimplePricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-simple-princing">
+                        <h3>Simple Princing</h3>
+                        <p>Easy princing means no suprises</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card-pricing">
+                        <h6><span>Free</span></h6>
+                        <h3><sup>$</sup>0<span>/mo</span></h3>
+                        <ul>
+                            <li><span>$</span><span>1 user</span></li>
+                            <li><span>$</span><span>Community support</span></li>
+                            <li><span>Community support</span></li>
+                            <li><span>Custom components</span></li>
+                            <li><span>Expanded utilities</span></li>
+                            <li><span>Third-party integration</span></li>
+                            <li><span>Layout options</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card-pricing">
+                        <h6><span class="standar">Standar</span></h6>
+                        <h3><sup>$</sup>19<span>/mo</span></h3>
+                        <ul>
+                            <li><span>$</span><span>Up to 15 users</span></li>
+                            <li><span>$</span><span>Email and live chat support</span></li>
+                            <li><span>$</span><span>Style customizer</span></li>
+                            <li><span>$</span><span>Custom components</span></li>
+                            <li><span>$</span><span>Expanded utilities</span></li>
+                            <li><span>$</span><span>Third-party integration</span></li>
+                            <li><span>$</span><span>Layout options</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card-pricing">
+                        <h6><span>Enterprise</span></h6>
+                        <p>We offer discounts for larger organizations. Contact us to inquire about enterprise level plans!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./assets/plugins/popper/popper.min.js"></script>
+    <script src="./assets/plugins/bootstrap/bootstrap.min.js"></script>
+
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

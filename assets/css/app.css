@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
 
 .btn-verde {
     margin-left: 2rem;
-    margin-right: 2.5rem;
     font-size: .7rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -20,35 +30,29 @@
 
 /* ==================== Header ==================== */
 
-header{
-    width: 100%;
-}
-
 header .navbar {
-    padding: 1.5rem 0rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     font-weight: 700;
 }
 
+header .navbar.active {
+    background-color: #1f2d41 !important;
+}
+
 header .navbar .container .navbar-brand {
-    margin-left: 1.5rem;
     text-transform: uppercase;
     font-weight: 900;
     color: #ffffff;
+    text-decoration: none;
 }
 
 header .navbar .container .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.7);
 }
 
-header .navbar .container .collapse ul {
-    margin-right: 3rem;
-}
-
-header .navbar .container .collapse ul li {
-    margin: 0rem .8rem;
-}
-
-header .navbar .container .collapse ul li a {
+header .navbar .navbar-nav .nav-link {
+    margin-left: 1.5rem;   
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -59,14 +63,19 @@ header .navbar .container .collapse ul li a:hover {
 /* ==================== Portada ==================== */
 
 #Portada {
-    height: 100vh;
     width: 100%;
-    padding: 15% 0%;
+    padding-top: 15%;
     background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%);
 }
 
+#Portada .container{
+    padding-bottom: 4rem;
+}
+
 #Portada .container .contenido-portada {
-    margin: 3rem 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
 }
 
 #Portada .container .contenido-portada h1 {
@@ -103,5 +112,192 @@ header .navbar .container .collapse ul li a:hover {
 }
 
 #Portada .container .imagen-portada img{
-    width: 500px;
+    width: 90%;
+}
+
+#Portada .curva-portada{
+    position: relative;
+    bottom: -1px;
+}
+
+/* ==================== Características ==================== */
+
+#Caracteristicas{
+    width: 100%;
+}
+
+#Caracteristicas .container{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#Caracteristicas .tarjeta{
+    text-align: center;
+}
+
+#Caracteristicas .tarjeta .icono{
+    font-size: 1.75rem;
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    display: inline-flex;
+    align-items: center;
+    background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%);
+    margin-bottom: 2rem;
+    color:#ffffff;
+}
+
+#Caracteristicas .tarjeta .icono i{
+    margin: auto;
+}
+
+#Caracteristicas .tarjeta h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #323f52;
+}
+
+#Caracteristicas .tarjeta p{
+    color: #687281;
+}
+
+#Caracteristicas .curva-caracteristicas{
+    position: relative;
+    bottom: -1px;
+}
+
+/* ==================== Características2 ==================== */
+
+#Caracteristicas2{
+    width: 100%;
+    background-color: #eff3f9;
+}
+
+#Caracteristicas2 .container{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#Caracteristicas2 .imagen-caracteristica2{
+    perspective: 1500px;
+    padding-top: 14%;
+}
+
+#Caracteristicas2 .imagen-caracteristica2 img{
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    border-radius: 0.5rem !important;
+    transform: rotateY(30deg) rotateX(15deg);
+}
+
+#Caracteristicas2 .description{
+    padding: 0rem 1rem;
+}
+
+#Caracteristicas2 .description h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #323f52;
+}
+
+#Caracteristicas2 .description p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #687281;
+    margin-bottom: 3rem;
+}
+
+#Caracteristicas2 .detalles-caracteristicas2{
+    padding: 0rem 1rem;
+}
+
+#Caracteristicas2 .detalles-caracteristicas2 .mini-detalle{
+    margin-right: .5rem;
+    margin-bottom: 2rem;
+}
+
+#Caracteristicas2 .detalles-caracteristicas2 .mini-detalle h5{
+    color: #323f52;
+    font-size: 1rem;
+}
+
+#Caracteristicas2 .detalles-caracteristicas2 .mini-detalle p{
+    margin-bottom: 5px;
+    color: #687281;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+#Caracteristicas2 .detalles-caracteristicas2 .mini-detalle a{
+    text-decoration: none;
+}
+
+#Caracteristicas2 .detalles-caracteristicas2 .mini-detalle a i{
+    font-size: .8rem;
+    margin-left: .1rem;
+}
+
+/* ==================== SimplePricing ==================== */
+
+#SimplePricing{
+    padding: 6% 0%;
+    background-color: #eff3f9;
+}
+
+#SimplePricing .title-simple-princing{
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+#SimplePricing .card-pricing{
+    padding: 2rem 2rem;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+}
+
+#SimplePricing .card-pricing span{
+    text-align: center;
+}
+
+#SimplePricing .card-pricing h6{
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+#SimplePricing .card-pricing h6 span{
+    border-radius: 50rem;
+    background-color: #eff3f9;
+    font-size: .8rem;
+    padding: .2rem 1rem;
+}
+
+#SimplePricing .card-pricing h6 span.standar{
+    color:#0061f2 !important;
+    background-color: #bfd6f8;
+}
+
+#SimplePricing .card-pricing h3{
+    margin-bottom: 1.7rem;
+    text-align: center;
+    font-size: 3rem;
+    color:#323f52;
+    font-weight: 400;
+}
+
+#SimplePricing .card-pricing h3 sup{
+    font-size: 1.5rem;
+}
+
+#SimplePricing .card-pricing h3 span{
+    font-size: 1.5rem;
+}
+
+#SimplePricing .card-pricing p{
+    margin-top: 5rem;
+    text-align: center;
+    padding: 0rem 1rem;
+    font-weight: 400;
+    color:#687281;
 }
