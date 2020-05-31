@@ -249,8 +249,9 @@ header .navbar .container .collapse ul li a:hover {
 }
 
 #SimplePricing .card-pricing{
-    padding: 2rem 2rem;
-    height: 400px;
+    margin: 2rem 1rem;
+    padding: 2rem 0rem;
+    height: 450px;
     background-color: #ffffff;
     border-radius: .5rem;
     box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
@@ -295,9 +296,35 @@ header .navbar .container .collapse ul li a:hover {
 }
 
 #SimplePricing .card-pricing p{
-    margin-top: 5rem;
+    margin-top: 7rem;
     text-align: center;
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
     font-weight: 400;
     color:#687281;
+}
+
+#SimplePricing .card-pricing li{
+    display: flex;   
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    padding: 0rem 1rem;
+}
+
+#SimplePricing .card-pricing .texto-lista{
+    text-align: left;
+    color:#687281;
+}
+
+#SimplePricing .card-pricing .texto-lista.activo{
+    font-weight: 500;
+    color: #584e4e;
+}
+
+#SimplePricing .card-pricing .icono-lista{
+    color: #00ba94 !important;
+    margin-right: .5rem;
+}
+
+#SimplePricing .card-pricing .icono-lista.oculto{
+    visibility: hidden;
 }
